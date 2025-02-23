@@ -4,6 +4,6 @@ public class KarateRunner {
 
     @Karate.Test
     Karate testSample() {
-        return Karate.run("classpath:karateTest.feature");
+        return Karate.run("classpath:rest/karateTest.feature");
     }
 }

@@ -20,3 +20,8 @@ Feature: plan de prueba
     Then status 201
     And match response.name == 'sebastian'
     And match response.job == 'developer'
+
+  Scenario: caso de prueba tipo DELETE
+    Given url 'https://reqres.in/api/users/2'
+    When method DELETE
+    Then status 204
